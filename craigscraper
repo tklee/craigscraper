@@ -1,0 +1,6 @@
+#!/bin/bash
+# first argument is the search term for the SF bay area entire craigslist
+
+curl http://sfbay.craigslist.org/search/?areaID=1&subAreaID=&query=custom+electronics
+	\ $1
+	\ | grep 'custom electronics' || 'robotics'
